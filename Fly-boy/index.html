@@ -3,40 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/Fly-boy/style.css">
+    <link rel="stylesheet" href="/Fly-boy/style.css">
     <title>Save Her at Some Point!</title>
     <style>
-        * {
-          padding: 0;
-          margin: 0;
-        }
-       
-        #game {
-          border: solid 1px red ;
-          height: 600px;
-          width: 600px;
-          /*align-content: center;*/
-          margin: auto;
 
-        }
-
-        #block {
-          margin: 100px 0px 0px 0px;
-          width: 50px;
-          height: 500px;
-          background: red;
-        }
       </style>
 </head>
 <body>
 <p>Be A Hero</p>
-    <div id="game">
-      <div id="block">
-      </div>
-      <div id="hole">
-      </div>
-      <div id="hero"></div>
-    </di>
+ <div id="canvas"> <!--art boared, need to learn canvas-->
+    <div id="heroShip"></div> <!--player-->
+    <div id="obsticle"></div>
+    <div id="enemyShip"></div>
+    <div id="obsticle2"></div>
+    <div id="ground"></div>
+
+
+ </div>
+
 
     <script src="/Fly-boy/index.js"></script>
 </body>
