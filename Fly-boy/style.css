@@ -41,9 +41,23 @@ p {
 }
 
 #top-obsticle {
+    position: relative;
+    left: 500px;
+    top: -800px;
+    border: solid 1em;
     background: black;
-   height: 200px;
-   width: 400px;
+   height: 100px;
+   width: 25px;
+}
+
+
+#enemyShip {
+   position: absolute;
+   right: 400px;
+   top: 200px;
+    background: red;
+    height: 60px;
+    width: 60px;
 }
 
 
