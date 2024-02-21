@@ -14,11 +14,36 @@ p {
     width: 700px;
     background-color: yellow;
     margin: auto;
+    overflow: hidden;
 }
 
 #heroShip {
     background: blue;
     height: 50px;
     width: 50px;
-    margin-top: 50%;
+    margin-top: 35%;
 }
+
+/*#ground {
+    background: brown;
+    margin-top: ;
+    width: 55%;
+    height: 15%;
+    
+}*/
+
+#obsticle {
+    position: relative;
+    height: 500px;
+    width: 50px;
+    background: black;
+    left: 625px;
+}
+
+#top-obsticle {
+    background: black;
+   height: 200px;
+   width: 400px;
+}
+
+
