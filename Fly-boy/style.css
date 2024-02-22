@@ -16,7 +16,7 @@ p {
     width: 700px;
     background-color: yellow;
     margin: auto;
-    overflow: hidden;
+   overflow: hidden;
 }
 
 #heroShip {
@@ -36,10 +36,22 @@ p {
 
 #obsticle {
     position: relative;
-    height: 500px;
+    height: 700px;
     width: 50px;
     background: black;
     left: 625px;
+    bottom: 325px;
+}
+
+#hole {
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 625px;
+}
+/*    animation: mymove 2s infinite;
+
 }
 
 #top-obsticle {
@@ -50,17 +62,24 @@ p {
     background: black;
    height: 100px;
    width: 25px;
-}
+   animation: mymove 2s infinite;
+}*/
 
 
-#enemyShip {
+/*#enemyShip {
    position: absolute;
    right: 400px;
    top: 200px;
     background: red;
     height: 60px;
     width: 60px;
-}
+}*/
+
+
+@keyframes mymove {
+    0%   {left: 700px;}
+    100% {left: -50px;}
+  }
 
 
 
