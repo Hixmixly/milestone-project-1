@@ -41,16 +41,20 @@ p {
     background: black;
     left: 625px;
     bottom: 325px;
+    animation: mymove 2s infinite;
 }
 
 #hole {
+    outline: solid 1px;
     width: 50px;
     height: 150px;
     background-color: white;
     position: relative;
     left: 625px;
+    top: -700px;
+    animation: mymove 2s infinite;
 }
-/*    animation: mymove 2s infinite;
+/*    
 
 }
 

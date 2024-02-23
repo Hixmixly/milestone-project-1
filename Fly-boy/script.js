@@ -1,10 +1,9 @@
 // using this as a ref -https://www.w3schools.com/graphics/game_controllers.asp
 
+var block = document.getElementById("obsticle");
+var hole = document.getElementById("hole")
 
+hole.addEventListener ("animationiteration", () => {
+    var random = (Math.random() * 300)
 
-const gameArea = document.getElementById('canvas')
-
-const hero = document.getElementById('heroShip') 
-    move (hero).arrowKeys(x, y)
-
-
+});
