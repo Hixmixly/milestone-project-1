@@ -25,7 +25,7 @@ p {
     height: 50px;
     top: 100px;
     width: 50px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 /*#ground {
@@ -42,7 +42,7 @@ p {
     width: 50px;
     background: black;
     left: 625px;
-    animation: mymove 2.5s infinite;
+    animation: obMove 2.5s infinite;
 }
 
 #hole {
@@ -52,11 +52,10 @@ p {
     position: relative;
     left: 625px;
     top: -600px;
-    animation: mymove 2.5s infinite;
+    animation: obMove 2.5s infinite;
 }
 /*    
 
-}
 
 #top-obsticle {
     position: relative;
@@ -75,12 +74,12 @@ p {
    right: 400px;
    top: 200px;
     background: red;
-    height: 60px;
+    height: 60px;oo
     width: 60px;
 }*/
 
 
-@keyframes mymove { /*used a reference */
+@keyframes obMove{ 
     0%   {left: 700px;}
     100% {left: -50px;}
   }
