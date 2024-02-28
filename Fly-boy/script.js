@@ -4,9 +4,16 @@ let arena = document.getElementById("canvas");
 let block = document.getElementById("obsticle");
 let hole = document.getElementById("hole");
 const player = document.getElementById("heroShip");
+let myScore = document.getElementById("score");
 let moveby = 15;
 
-/*https://www.youtube.com/watch?v=3SsYZDJdeXk&t=357s*/ 
+
+/*score, using Game Score ref from W3*/ 
+function canvas () {
+    myScore = ('20px', 'Helvetica', 'black')
+}
+
+/* ref https://www.youtube.com/watch?v=3SsYZDJdeXk&t=357s*/ 
 hole.addEventListener ("animationiteration", () => {
     var random = -((Math.random() * 450) + 150);
     hole.style.top = random + "px";
@@ -14,6 +21,8 @@ hole.addEventListener ("animationiteration", () => {
 });
 
 
+
+/*player movement*/ 
 //38 up, 39 right, 40 down, 37 left
 window.addEventListener('load', ()=> {
     player.style.left = 0;

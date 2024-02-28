@@ -17,6 +17,7 @@ p {
     background-color: yellow;
     margin: auto;
    overflow: hidden;
+   box-shadow: 7px 5px;
 }
 
 #heroShip {
