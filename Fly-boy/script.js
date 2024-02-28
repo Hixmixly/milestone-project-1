@@ -4,73 +4,39 @@ let arena = document.getElementById("canvas");
 let block = document.getElementById("obsticle");
 let hole = document.getElementById("hole");
 const player = document.getElementById("heroShip");
-let flying = 0;
+let moveby = 15;
 
-
+/*https://www.youtube.com/watch?v=3SsYZDJdeXk&t=357s*/ 
 hole.addEventListener ("animationiteration", () => {
     var random = -((Math.random() * 450) + 150);
     hole.style.top = random + "px";
 
 });
 
-setInterval (function(){
-    let playerTop = 
-    parseInt(window.getComputedStyle(player).getPropertyValue("top"));
-   if (jumpling == 0) {
-      player.style.top = (playerTop + 3) + "px";
-   }
-  
-}, 10);
 
-function fly (){
-    flying = 1;
-    let flyCount = 0;
-    let flyInterval = setInterval(function(){
-        let playerTop =
-        parseInt(window.getComputedStyle(player).getPropertyValue("top"));
-       if((playerTop > 5)&&(counter<15)){
-            player.style.top = (playerTop -6) + "px";
-        }
-       
-        if(flyCount > 15){
-            clearInterval(flyInterval);
-            flying=0;
-            flyCount=0;
-        }
-    flyCount ++;
-    }, 10);
-}
-
-
-
-addEventListener ('keydown', ({keyCode}) => {
-        switch (keyCode) {
-            case 37:
-                console.log('left')
-                break
-
-            case 38:
-                console.log('up')
-                break  
-                
-            case 39:
-                 console.log('right')
-                break
-                    
-            case 40:
-                console.log('down')
-                break
-        }
-})
 //38 up, 39 right, 40 down, 37 left
+window.addEventListener('load', ()=> {
+    player.style.left = 0;
+    player.style.top = 0;
 
-document.addEventListener("keyDown", e => {
-    
-})
+});
 
-
-
-
+window.addEventListener('keydown', (e)=> {
+    switch (e.key) {
+        case 'ArrowLeft':
+            player.style.left = parseInt(player.style.left) - moveby + 'px';
+            break; 
+        case 'ArrowRight':
+            player.style.left = parseInt(player.style.left) + moveby + 'px';
+            break; 
+        case 'ArrowUp':
+            player.style.top = parseInt(player.style.top) - moveby + 'px';
+            break; 
+        case 'ArrowDown':
+            player.style.top = parseInt(player.style.top) + moveby + 'px';
+            break; 
+    }
+});
 
 
 

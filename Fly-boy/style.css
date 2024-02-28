@@ -29,13 +29,13 @@ p {
     border-radius: 50%;
 }
 
-/*#ground {
+#ground {
+    border: blue solid;
     background: brown;
-    margin-top: ;
     width: 55%;
     height: 15%;
     
-}*/
+}
 
 #obsticle {
     position: relative;
@@ -43,7 +43,7 @@ p {
     width: 50px;
     background: black;
     left: 625px;
-    animation: obMove 2.5s infinite;
+    animation: obMove 3s infinite;
 }
 
 #hole {
@@ -53,7 +53,7 @@ p {
     position: relative;
     left: 625px;
     top: -600px;
-    animation: obMove 2.5s infinite;
+    animation: obMove 3s infinite;
 }
 /*    
 
